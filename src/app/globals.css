@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-background: rgba(30, 30, 30, 1);
+  --color-foreground: rgba(255, 255, 255, 1);
+  --color-text-primary: rgba(191, 149, 57, 1);
+  --color-text-secondary: rgba(157, 175, 189, 1);
+  --font-roboto: 'Roboto', sans-serif;
+
+  --box-shadow-primary: inset 0 0 0 2px var(--color-text-primary);
+}
+
+@layer utilities {
+  .accordion {
+    @apply flex items-center w-full text-left cursor-pointer;
+  }
+
+  .link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .link:hover {
+    color: color-mix(in srgb, var(--color-text-primary) 70%, transparent);
+    transition: all 0.3s ease;
+  }
+
+  .link:active {
+    transform: scale(0.95);
+  }
+}
+
+@layer base {
+  [data-theme='light'] {
+    --color-background: rgba(255, 255, 255, 1);
+    --color-foreground: rgba(30, 30, 30, 1);
+    --color-text-primary: rgba(191, 149, 57, 1);
+    --color-text-secondary: rgba(157, 175, 189, 1);
+    --box-shadow-primary: inset 0 0 0 2px var(--color-text-primary);
+  }
+
+  h1 {
+    font-size: 3.75em;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-text-primary);
+  }
+  
+  button {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-foreground);
+    background-color: var(--color-text-primary);
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.8em 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: color-mix(in srgb, var(--color-text-primary) 70%, transparent);
+    transform: scale(0.98);
+  }
+  
+  button:active {
+    background-color: color-mix(in srgb, var(--color-text-primary) 90%, transparent);
+    transform: scale(0.95);
+  }
+}
+
+
+body {
+  font-family: var(--font-roboto);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
