@@ -6,47 +6,17 @@ import { Accordion } from '@/components/accordion'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { ArrowDownIcon } from '@/components/ArrowDownIcon'
+import Link from 'next/link'
+import { links } from '@/utils/links'
 
 export default function Home() {
 	return (
 		<>
 			<Header />
-			{/* <section className='lg:min-h-screen max-w-[1300px] mx-auto flex items-center justify-center'>
-				<div className='grid grid-cols-1 lg:grid-cols-7 h-full w-full px-[1.5em] lg:px-0 py-[5em] lg:py-0 gap-8 lg:gap-0'>
-					<div className='flex flex-col lg:col-span-3 justify-center items-start gap-7 order-2 lg:order-1'>
-						<h1 className='font-bold'>Curso de Otoplastia Sem Corte</h1>
-						<p className='text-text-secondary text-[1.1em]'>
-							Domine a habilidade de otoplastia e saia dos plantões para faturar
-							6 dígitos por ano.
-							<br />
-							<br />
-							Transforme sua carreira e explore novas oportunidades com o nosso
-							curso de otoplastia sem corte. Aprenda técnicas revolucionárias
-							para um mercado lucrativo e de baixo custo.
-						</p>
-						<button type='button'>Inscreva-se Agora</button>
-						<a
-							type='button'
-							className='absolute link bottom-10 flex items-center gap-2 text-text-secondary'
-						>
-							<ArrowDownIcon />
-							Saiba mais
-						</a>
-					</div>
-					<div className='flex justify-center h-[500px] lg:h-[800px] lg:col-span-4 items-center order-1 lg:order-2'>
-						<Image
-							src='/image_1.png'
-							className='w-full h-full object-cover [box-shadow:var(--box-shadow-primary)]'
-							width={2000}
-							height={2000}
-							quality={100}
-							alt='Como vamos te ajudar nessa jornada'
-						/>
-					</div>
-				</div>
-			</section> */}
-			{/* border line */}
-			<section className='lg:h-screen mx-auto flex items-center justify-center relative overflow-hidden'>
+			<section
+				id='inicio'
+				className='lg:h-screen mx-auto flex items-center justify-center relative overflow-hidden'
+			>
 				{/* web */}
 				<Image
 					src='/image_8.png'
@@ -77,22 +47,27 @@ export default function Home() {
 							curso de otoplastia sem corte. Aprenda técnicas revolucionárias
 							para um mercado lucrativo e de baixo custo.
 						</p>
-						<button type='button'>Inscreva-se Agora</button>
+						<Link href={links.planos} type='button' className='button'>
+							Inscreva-se Agora
+						</Link>
 					</div>
-					<a
-						type='button'
-						className='link lg:absolute lg:bottom-20 lg:left-0 flex items-center px-[1.5em] pt-[3em] pb-[7em] lg:px-- gap-2 text-text-secondary'
+					<Link
+						href='#section-2'
+						className='link z-50 lg:absolute lg:bottom-20 lg:left-0 flex items-center px-[1.5em] pt-[3em] pb-[7em] lg:px-- gap-2 text-text-secondary'
 					>
 						<ArrowDownIcon />
 						Saiba mais
-					</a>
+					</Link>
 				</div>
 			</section>
 
 			<div className='w-full h-[4px] bg-text-primary -mt-[4px] z-10' />
 
 			{/* section 2 */}
-			<section className='max-w-[1300px] mx-auto flex items-center justify-center'>
+			<section
+				id='section-2'
+				className='max-w-[1300px] mx-auto flex items-center justify-center'
+			>
 				<div className='grid grid-cols-1 lg:grid-cols-7 h-full w-full gap-0 lg:gap-8 relative'>
 					<Image
 						src='/image_2.png'
@@ -137,7 +112,10 @@ export default function Home() {
 			</section>
 
 			{/* section 3 */}
-			<section className='flex flex-col gap-12 justify-center items-center min-h-screen w-full mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-0 relative'>
+			<section
+				id='aulas'
+				className='flex flex-col gap-12 justify-center items-center min-h-screen w-full mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-0 relative'
+			>
 				<Image
 					src='/image_7_left.png'
 					alt='Background Left'
@@ -219,14 +197,17 @@ export default function Home() {
 							description='Acesso a artigos, Contratos, Termos para paciente e Suporte.'
 						/>
 					</div>
-					<button type='button' className='mt-7'>
-						Inscreva-se Agora
-					</button>
+					<Link href={links.planos} type='button' className='button mt-7'>
+						Garanta a sua vaga agora
+					</Link>
 				</div>
 			</section>
 
 			{/* section 4 */}
-			<section className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-[1300px] w-full gap-8 lg:gap-0 mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-0'>
+			<section
+				id='about-me'
+				className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-[1300px] w-full gap-8 lg:gap-0 mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-0'
+			>
 				<div className='flex flex-1 flex-col z-10 justify-center items-start'>
 					<div className='flex flex-col items-start gap-7 lg:p-12'>
 						<h1 className='font-bold'>Quem sou eu?</h1>
@@ -279,7 +260,10 @@ export default function Home() {
 			</section>
 
 			{/* section 6 */}
-			<section className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-[1300px] w-full gap-8 lg:gap-0 mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-0'>
+			<section
+				id='curso'
+				className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-[1300px] w-full gap-8 lg:gap-0 mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-0'
+			>
 				<div className='flex flex-1 flex-col z-10 justify-center items-start order-2 lg:order-1'>
 					<div className='flex flex-col items-start gap-7 lg:p-12'>
 						<h1 className='font-bold'>Para quem é esse curso?</h1>
@@ -291,7 +275,9 @@ export default function Home() {
 							oportunidades na carreira e ampliando suas habilidades
 							profissionais.
 						</p>
-						<button type='button'>Quero fazer parte</button>
+						<Link href={links.planos} type='button' className='button'>
+							Quero fazer parte
+						</Link>
 					</div>
 				</div>
 				<div className='flex-1 flex justify-center items-center order-1 lg:order-2'>
@@ -308,7 +294,10 @@ export default function Home() {
 			<Carousel />
 
 			{/* section 8 */}
-			<section className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-[1300px] w-full gap-8 lg:gap-0 mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-44'>
+			<section
+				id='planos'
+				className='grid grid-cols-1 lg:grid-cols-2 justify-center items-center max-w-[1300px] w-full gap-8 lg:gap-0 mx-auto px-[1.5em] lg:px-0 py-[5em] lg:py-44'
+			>
 				<div className='flex flex-1 flex-col z-10 justify-center items-center lg:items-start lg:pb-16'>
 					<h1 className='font-bold'>Investimento</h1>
 					<p className='text-text-secondary text-[1.1em]'>
@@ -327,7 +316,14 @@ export default function Home() {
 							<p>Ebook de acompanhamento</p>
 							<p>Comunidade da Otoplastia</p>
 						</div>
-						<button type='button'>Comprar</button>
+						<Link
+							href={links.cursoPlanoOnline}
+							type='button'
+							className='button'
+							target='_blank'
+						>
+							Comprar
+						</Link>
 					</div>
 
 					<div className='flex flex-col items-center justify-center gap-2 w-full lg:max-w-[270px]'>
@@ -342,13 +338,23 @@ export default function Home() {
 							<p>Materiais</p>
 							<p>Realizar o curso totalmente presencial na prática.</p>
 						</div>
-						<button type='button'>Comprar</button>
+						<Link
+							href={links.cursoPresencial}
+							type='button'
+							className='button'
+							target='_blank'
+						>
+							Comprar
+						</Link>
 					</div>
 				</div>
 			</section>
 
 			{/* section 9 */}
-			<section className='max-w-[1300px] mx-auto flex flex-col px-[1.5em] lg:px-0 gap-8 items-start- justify-start'>
+			<section
+				id='duvidas'
+				className='max-w-[1300px] mx-auto flex flex-col px-[1.5em] lg:px-0 gap-8 items-start- justify-start'
+			>
 				<h1 className='font-bold'>Dúvidas</h1>
 				<Accordion />
 			</section>

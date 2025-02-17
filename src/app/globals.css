@@ -30,6 +30,32 @@
   .link:active {
     transform: scale(0.95);
   }
+
+
+  .button {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-foreground);
+    background-color: var(--color-text-primary);
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.8em 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .button:hover {
+    background-color: color-mix(in srgb, var(--color-text-primary) 70%, transparent);
+    transform: scale(0.98);
+  }
+  
+ .button:active {
+    background-color: color-mix(in srgb, var(--color-text-primary) 90%, transparent);
+    transform: scale(0.95);
+  }
+
 }
 
 @layer base {
@@ -71,13 +97,16 @@
     background-color: color-mix(in srgb, var(--color-text-primary) 90%, transparent);
     transform: scale(0.95);
   }
+
+  body {
+    font-family: var(--font-roboto);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
 }
 
 
-body {
-  font-family: var(--font-roboto);
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+

@@ -1,26 +1,30 @@
 export const MenuPaths = [
 	{
 		label: 'Inicio',
-		href: '#',
+		href: '#inicio',
 	},
 	{
 		label: 'Aulas',
-		href: '#',
-	},
-	{
-		label: 'Para quem é esse curso?',
-		href: '#',
+		href: '#aulas',
 	},
 	{
 		label: 'Quem sou eu?',
-		href: '#',
+		href: '#about-me',
 	},
 	{
-		label: 'alunos',
-		href: '#',
+		label: 'Para quem é esse curso?',
+		href: '#curso',
+	},
+	{
+		label: 'Feedback',
+		href: '#feedback',
+	},
+	{
+		label: 'Planos',
+		href: '#planos',
 	},
 	{
 		label: 'Duvidas',
-		href: '#',
+		href: '#duvidas',
 	},
 ] as const

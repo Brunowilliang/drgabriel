@@ -1,13 +1,18 @@
+import { links } from '@/utils/links'
 import { MenuPaths } from '@/utils/menu'
-import { Instagram, Twitter, Facebook } from 'lucide-react'
+import { Instagram, Facebook } from 'lucide-react'
+import Link from 'next/link'
 
 export function Footer() {
 	return (
 		<footer className='max-w-[1300px] mx-auto'>
 			<div className='flex gap-4 w-full justify-center lg:justify-end'>
-				<Instagram className='text-text-secondary' />
-				<Twitter className='text-text-secondary' />
-				<Facebook className='text-text-secondary' />
+				<Link href={links.instagram} target='_blank'>
+					<Instagram className='text-text-secondary' />
+				</Link>
+				<Link href={links.facebook} target='_blank'>
+					<Facebook className='text-text-secondary' />
+				</Link>
 			</div>
 			<div className='flex flex-col lg:flex-row px-[1.5em] lg:px-0 gap-8 pt-10 pb-4 items-start- justify-between'>
 				<div className='text-text-secondary text-center lg:text-left order-last lg:order-first'>

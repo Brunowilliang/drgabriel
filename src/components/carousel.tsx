@@ -43,31 +43,31 @@ export default function Carousel() {
 	const items: CarouselItem[] = [
 		{
 			id: 1,
-			image: '/image_4.png',
-			title: 'Dr. Lucas Andrade',
-			subtitle: 'Cirurgião Plástico',
+			image: '/avatar/1.png',
+			title: 'Dr. Rafael Lima',
+			subtitle: 'Otorrinolaringologista',
 			content:
-				'A técnica ensinada no curso é transformadora. Consegui diversificar meus atendimentos e aumentar significativamente minha receita.',
+				'O curso foi um divisor de águas. Hoje, aplico a otoplastia sem corte na minha clínica com total segurança e confiança.',
 		},
 		{
 			id: 2,
-			image: '/image_4.png',
-			title: 'Dra. Mariana Silva',
-			subtitle: 'Pediatra',
-			content:
-				'A metodologia é incrível! Aprendi a atender pacientes de todas as idades com uma técnica minimamente invasiva.',
-		},
-		{
-			id: 3,
-			image: '/image_4.png',
+			image: '/avatar/5.png',
 			title: 'Dr. Felipe Torres',
 			subtitle: 'Clínico Geral',
 			content:
 				'Nunca imaginei que uma técnica tão simples pudesse trazer tanto retorno. O suporte do grupo foi essencial para minha transição.',
 		},
 		{
+			id: 3,
+			image: '/avatar/2.png',
+			title: 'Dr. Lucas Andrade',
+			subtitle: 'Cirurgião Plástico',
+			content:
+				'A técnica ensinada no curso é transformadora. Consegui diversificar meus atendimentos e aumentar significativamente minha receita.',
+		},
+		{
 			id: 4,
-			image: '/image_4.png',
+			image: '/avatar/3.png',
 			title: 'Dra. Mariana Silva',
 			subtitle: 'Pediatra',
 			content:
@@ -75,16 +75,16 @@ export default function Carousel() {
 		},
 		{
 			id: 5,
-			image: '/image_4.png',
-			title: 'Dr. Felipe Torres',
-			subtitle: 'Clínico Geral',
+			image: '/avatar/4.png',
+			title: 'Dra. Camila Moura',
+			subtitle: 'Dermatologista',
 			content:
-				'Nunca imaginei que uma técnica tão simples pudesse trazer tanto retorno. O suporte do grupo foi essencial para minha transição.',
+				'Adorei a abordagem prática e detalhada. Finalmente saí do ambiente hospitalar e estou focada em estética com excelentes resultados.',
 		},
 	]
 
 	return (
-		<div className='w-full max-w-[1300px] mx-auto py-44'>
+		<div id='feedback' className='w-full max-w-[1300px] mx-auto py-44'>
 			<div className='overflow-hidden' ref={emblaRef}>
 				<div className='flex'>
 					{items.map((item, index) => (
