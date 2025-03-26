@@ -11,28 +11,26 @@ export interface AccordionProps {
 const items = [
 	{
 		title: 'O curso é indicado para qualquer médico?',
-		content:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+		content: 'Qualquer médico pode se inscrever e participar.',
 	},
 	{
 		title: 'Qual a carga horária do curso?',
-		content:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+		content: 'Para finalizar o curso leva em media 4h de conteúdo.',
 	},
 	{
 		title: 'Qual a diferença entre o plano online e o presencial?',
 		content:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+			'No plano presencial, você terá a oportunidade de praticar em pacientes modelos reais e esclarecer suas dúvidas diretamente comigo, garantindo uma experiência mais imersiva e interativa.',
 	},
 	{
 		title: 'Os materiais utilizados são inclusos no valor do curso?',
 		content:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+			'Sim, todos os materiais necessários para a prática estão incluídos no valor do curso, sem custos adicionais.',
 	},
 	{
 		title: 'Existe suporte técnico após a conclusão do curso?',
 		content:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+			'Sim! Você terá acesso ao nosso grupo exclusivo no WhatsApp, onde poderá tirar dúvidas e receber suporte contínuo mesmo após a conclusão do curso.',
 	},
 ]
 
