@@ -309,7 +309,7 @@ export default function Home() {
 					<div className='flex flex-col items-center justify-center gap-2 w-full lg:max-w-[270px]'>
 						<div className='flex flex-col text-center items-center justify-center gap-6 py-11 px-7 border border-text-secondary rounded-lg text-text-secondary w-full'>
 							<h2 className='font-bold text-1xl'>Plano Online</h2>
-							<p className='text-4xl text-text-primary'>$ 2.997</p>
+							<p className='text-4xl text-text-primary'>R$ 2.500,00</p>
 							<div className='w-[50px] h-[5px] rounded-full bg-text-secondary' />
 							<p>Acesso Vitalício</p>
 							<p>Suporte Via WhatsApp</p>
@@ -329,7 +329,7 @@ export default function Home() {
 					<div className='flex flex-col items-center justify-center gap-2 w-full lg:max-w-[270px]'>
 						<div className='flex flex-col text-center items-center justify-center gap-6 py-11 px-7 border border-text-secondary rounded-lg text-text-secondary w-full'>
 							<h2 className='font-bold text-1xl'>Plano Online e Presencial</h2>
-							<p className='text-4xl text-text-primary'>$ 2.997</p>
+							<p className='text-4xl text-text-primary'>R$ 5.000,00</p>
 							<div className='w-[50px] h-[5px] rounded-full bg-text-secondary' />
 							<p>Acesso Vitalício</p>
 							<p>Suporte Via WhatsApp</p>
